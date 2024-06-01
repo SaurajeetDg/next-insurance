@@ -2,32 +2,389 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+*{
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  /* background-color: black; */
+  /* color: white; */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  /* max-width: 100%; */
+}
+.leftheader{
+  display: flex;
+  align-items: center;
+  /* height: 60px; */
+  box-sizing: border-box;
+  padding-left: 1%;
+  flex-basis: 30%;
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+  height: 12vh;
+  background-color: rgb(0,19,0);
+}
+.leftheaderimg{
+  width: 60px;
+  height: 100%;
+}
+.leftheader h1{
+  font-weight: 900;
+  color: rgb(223, 253, 0);
+  font-size: 25px;
+}
+.rightheader{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-basis: 60%;
+}
+.rightheader ul{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+}
+.rightheader ul li{
+  transition: color 0.5s;
+  color: white;
+}
+.rightheader ul li:hover{
+  color:rgb(223, 253, 0) ;
+  cursor: pointer;
+}
+.buttontop{
+  height: 40px;
+  width: 175px;
+  background-color: rgb(223, 253, 0);
+  color: black;
+  text-align: center;
+  font-weight: 700;
+  border-radius: 20px;
+  align-items: center;
+  transition: background-color 0.7s;
+  
+}
+.buttontop:hover{
+  background-color: white;
+
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.hp1left h1{
+  font-size: 40px;
+  font-weight: 900;
+  color: rgb(228, 226, 226);
+}
+.hp1left p{
+  color: white;
+}
+.hp1left{
+  flex-basis: 25%;
+}
+.hp1left  h1 span{
+  color:rgb(223, 253, 0);
+}
+.hp1{
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  padding-top: 5%;
+  padding-left: 5%;
+  padding-right: 2%;
+  /* background-image: url('https://img.freepik.com/premium-vector/health-insurance-medical-protection-medical-insurance-concepts-flat-design_100456-6645.jpg'); */
+  background-image:url("../images/bg1.jpg") ;
+  background-position:center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 88vh;
+  width: 100%;
+  /* font-family: 'Times New Roman', Times, serif; */
+}
+.button{
+  display: flex;
+  gap: 15px;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+
+
+/* homepage2 */
+
+
+
+.hp2{
+  background: linear-gradient(rgb(0,7,0),rgb(0,19,0),black);
+  height: 180vh;
+  width: 100%;
+  box-sizing: border-box;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.hp21 h1{
+  padding-top: 30px;
+  font-size: 30px;
+  text-align: center;
+  color: white;
+  font-weight: 700;
+}
+.card h2{
+  font-weight: 700;
+  font-size: 25px;
+  color:rgba(196, 220, 14, 0.995) ;
+}
+.cards{
+  color: white;
+  display: flex;
+  /* gap: 10px; */
+  align-items: center;
+  justify-content: space-evenly;
+ 
+}
+.card{
+  width: 200px;
+  border: 2px solid rgb(99, 97, 97);
+  align-items: center;
+  text-align: center;
+  display:grid;
+  justify-content: center;
+  transition: background-color 1s;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 5px 7px 5px rgba(95, 95, 95, 0.676);
+}
+
+.hp2img{
+  width: 90%;
+  display:flex;
+  justify-self: center;
+  align-self: center;
+  
+  text-align: center;
+  margin: 10px;
+  border-bottom: 2px solid grey;
+  padding-bottom: 5px;
+}
+
+.card:hover{
+  background-color:rgba(196, 220, 14, 0.995) ;
+  color: black !important;
+}
+.card:hover h2{
+  color: black;
+}
+
+.hp22 {
+  color: white;
+  padding-top: 140px;
+  display: flex;
+}
+.hp22 h1{
+  color:rgba(196, 220, 14, 0.995);
+}
+.hp22left{
+  flex-basis: 45%;
+}
+.hp22left img{
+  width: 90%;
+}
+
+.hp22right{
+  flex-basis:50%;
+  box-sizing: border-box;
+  text-align: center;
+  padding-right: 1%;
+}
+.hp22right h1{
+  font-size: 25px;
+  text-align: center;
+  color: rgba(196, 220, 14, 0.995);
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+.hp22right p{
+  font-size: 15px;
+  color: rgb(218, 217, 217);
+}
+
+
+
+/* ------hp3------ */
+
+.hp3{
+  background:linear-gradient(black,rgb(0,17,0));
+  height: 100vh;
+  color: white;
+  text-align: center;
+  justify-content: center;
+}
+.hp3 h1{
+  font-size: 25px;
+  text-align: center;
+  /* color: rgba(196, 220, 14, 0.995); */
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+.hp3 p{
+  font-size: 15px;
+  color: rgb(218, 217, 217);
+  padding: 10px 65px;
+}
+.hp3 h1 span{
+  color: rgba(196, 220, 14, 0.995);
+}
+.hp3cards{
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+  /* gap: 10px; */
+  align-items: center;
+  justify-content: space-evenly;
+ 
+}
+.hp3card{
+  width: 180px;
+  border: 2px solid rgb(99, 97, 97);
+  align-items: center;
+  text-align: center;
+  display:grid;
+  justify-content: center;
+  transition: background-color 1s;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 5px 7px 6px rgba(95, 95, 95, 0.676);
+  transition: transform 0.5s;
+}
+.hp3card p{
+  padding: 5px 10px;
+}
+
+.hp3card h2{
+  font-size: 18px;
+  color: rgba(196, 220, 14, 0.995);
+}
+.hp3card:hover{
+  transform: translateY(-5px);
+  background-color: rgba(196, 220, 14, 0.995);
+}
+.hp3card:hover p{
+  color: #000000;
+}
+.hp3card:hover h2{
+  color: rgb(46, 17, 17);
+  font-weight: 900;
+}
+.hp3 h3{
+  /* width: 200px;
+  padding: 10px 20px;
+  background-color: gray; */
+  text-align: center;
+  display: inline-flex;
+  justify-content: center;
+  border-radius: 100px;
+  margin: 20px auto;
+  font-size: 25px;
+  /* box-shadow: 5px 7px 6px rgba(95, 95, 95, 0.676); */
+}
+
+
+
+/* hp4 */
+
+.hp4{
+  background:linear-gradient(rgb(0,19,0),rgb(0,19,0));
+  width: 100%;
+  box-sizing: border-box;
+  height: 100vh;
+}
+.hp4cards{
+  color: white;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.hp4card{
+  width: 250px;
+  border: 2px solid rgb(99, 97, 97);
+  align-items: center;
+  text-align: center;
+  display:grid;
+  justify-content: center;
+  transition: background-color 1s;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 5px 7px 5px rgba(95, 95, 95, 0.676);
+}
+.slick-slide>div{
+  margin: 0 20px;
+  justify-content: center;
+}
+.hp41{
+  width: 90%;
+  align-items: center;
+  padding-left: 10%;
+  padding-top: 30px;
+  /* display: flex; */
+  /* flex-direction: column;
+  align-items: center;
+  justify-content: center; */
+  display: inline-block;
+  align-items: center;
+}
+.hp4 h1{
+  color: white;
+  font-size: 30px;
+  font-weight: 800;
+  text-align: center;
+  padding-top: 40px;
+}
+.hp4cc{
+  background-color:rgba(196, 220, 14, 0.731) ;
+}
+.hp4 span{
+  color:rgb(196, 220, 14);
+}
+.hp4cname{
+  font-size: 18px;
+}
+.hp4creview{
+  font-size: 14px;
+  text-align: center;
+}
+.hp4c{
+  background-color: rgba(36, 36, 36, 0.968);
+}
+
+
+.hp5cards{
+  display: flex;
+  /* align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+} */
+}
+
+.hp5head{
+  color:rgb(196, 220, 14) ;
+  text-align: center;
+  font-weight: 800;
+}
+
+
+
+/* ------footer------ */
+
+
+
+.footer{
+  background-color:rgb(0,19,0);
+  color: white;
+  text-align: center;
+  padding: 10px 0px;
+  border-top: 1px solid gray;
+}
+.footer p{
+  font-size: 10px;
+}
+.footer span,h1{
+  color:rgb(196, 220, 14);
 }
